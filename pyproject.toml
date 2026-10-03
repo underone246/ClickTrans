@@ -6,7 +6,9 @@ build-backend = "setuptools.build_meta"
 name = "clicktrans"
 version = "0.1.0"
 description = "鼠标框选即可实时翻译的小工具，支持中文 / 日语 / 英语三语互译"
-readme = "ARCHITECTURE.md"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
 dependencies = [
     "PyQt6>=6.6",

@@ -1,7 +1,14 @@
 # 打包产物
 dist/
-build/_pyi/
 build_log.txt
+
+# build/ 里只保留这两个源文件，其余全忽略。
+# 为什么要这么写：`pip wheel .` 会生成 build/lib/（整份源码的副本）和
+# build/bdist.*/，PyInstaller 会生成 build/_pyi/。逐个列容易漏，
+# 而漏掉一次就会把一份重复的源码推进公开仓库。
+build/*
+!build/clicktrans.spec
+!build/launcher.py
 
 # Python
 __pycache__/

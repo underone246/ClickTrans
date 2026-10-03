@@ -9,11 +9,19 @@
 
 截图和文字识别全程在本机完成，**只有识别出的纯文本会发到翻译接口**。
 
+> **不想装 Python？** 直接下载打包好的单文件 exe（约 127 MB，双击即用、无需任何依赖）：
+> **[⬇ Releases](https://github.com/underone246/ClickTrans/releases/latest)**
+
 ---
 
 ## 快速开始
 
-### 1. 准备环境
+### 0. 最省事：直接下 exe
+
+去 **[Releases](https://github.com/underone246/ClickTrans/releases/latest)** 下载
+`ClickTrans.exe`，双击运行即可，跳过下面所有环境配置步骤。
+
+### 1. 从源码运行（准备环境）
 
 需要 Python 3.11+（本机用的是 3.13）。
 
@@ -284,3 +292,11 @@ clicktrans/                ← 项目根
 - **exe 启动比源码慢一点**。单文件包每次运行都要把 127 MB 解压到临时目录，
   冷启动多花 1-2 秒。介意的话可以把 spec 改成 `--onedir`（`COLLECT` 模式），
   代价是变成一个文件夹。
+
+---
+
+## 许可证
+
+[MIT](LICENSE) © 2026 underone246
+
+简单说：随便用、随便改、随便商用，**但出问题别找我**，且需保留版权声明。
