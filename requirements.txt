@@ -1,0 +1,5 @@
+PyQt6>=6.6
+httpx>=0.27
+numpy>=1.26
+rapidocr-onnxruntime>=1.2.3
+pywin32>=306; sys_platform == "win32"

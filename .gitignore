@@ -1,0 +1,18 @@
+# 打包产物
+dist/
+build/_pyi/
+build_log.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# 运行期数据（正常都在 ~/.clicktrans/，这里防手滑）
+*.log
+history.json
+secret.bin
+config.toml

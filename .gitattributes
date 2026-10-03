@@ -1,0 +1,11 @@
+# 统一按 LF 存储，避免在 Windows 上 checkout 出的 CRLF 让 diff 全变
+* text=auto eol=lf
+
+# 二进制文件不要做换行转换
+*.png binary
+*.jpg binary
+*.ico binary
+*.exe binary
+*.dll binary
+*.onnx binary
+*.zip binary
